@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NowPlace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrap" id="appRoot"></div>
+  <button class="fab" id="fabBtn" title="Registrar meu Now">+</button>
+
+  <div class="overlay hidden" id="captureOverlay"></div>
+
+  <input type="file" id="fileEnv" accept="image/*" capture="environment">
+  <input type="file" id="fileSelfie" accept="image/*" capture="user">
+
+  <script src="js/app.js"></script>
+</body>
+</html>
