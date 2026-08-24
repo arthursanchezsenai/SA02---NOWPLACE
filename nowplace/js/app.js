@@ -505,6 +505,17 @@ function onShutter(step) {
   if (step === 2) captureLocation();
 }
 
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') {
+    const btn = document.getElementById('shutterBtn');
+
+    if (btn) {
+      e.preventDefault();
+      btn.click();
+    }
+  }
+});
+
 function renderCapture() {
   const c = state.capture;
   let body = '';
